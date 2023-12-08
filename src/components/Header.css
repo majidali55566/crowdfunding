@@ -11,7 +11,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 2rem 10rem;
-    min-height: 50vh;
+    min-height: 47vh;
   }
 }
 @media (min-width: 1024px) {
