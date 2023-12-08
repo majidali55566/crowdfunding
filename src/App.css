@@ -1,0 +1,217 @@
+main {
+  display: grid;
+  place-content: center;
+
+  background-color: hsla(0, 0%, 96%);
+}
+
+main .main-container {
+  position: relative;
+  top: -2rem;
+}
+@media (min-width: 375px) {
+  main .main-container {
+    top: -4rem;
+  }
+}
+@media (min-width: 768px) {
+  main .main-container {
+    max-width: 40rem;
+    top: -5rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .main-container {
+    min-width: 50rem;
+  }
+}
+
+/* BAMBOO MONITOR RISER */
+
+main .product-intro-card {
+  border: 1px solid rgba(218, 215, 215, 0.507);
+  background-color: var(--neutra-100);
+  flex-direction: column;
+  margin: 0 var(--mobile-margin);
+  border-radius: var(--border-radius-p5);
+  padding: var(--mobile-padding);
+}
+
+@media (min-width: 768px) {
+  main .product-intro-card {
+    padding-bottom: var(--desktop-padding);
+    padding-inline: var(--desktop-padding);
+  }
+}
+
+.product-intro-card .logo-m {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  top: -3rem;
+}
+.product-intro-info {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+.product-intro-card .product-name {
+  font-weight: var(--fw-700);
+  font-size: 1.2rem;
+}
+.product-intro-card .info {
+  color: var(--neutral-500);
+}
+
+.save-to-favourite-container {
+  justify-content: space-between;
+}
+.save-to-favourite-container .favourite-bookmark {
+  background-color: hsl(0, 0%, 96%);
+  display: flex;
+  border-radius: 2rem;
+  align-items: center;
+}
+.save-to-favourite-container .favourite-bookmark:hover p {
+  color: var(--color-primary-600);
+}
+.save-to-favourite-container .favourite-bookmark:hover svg circle {
+  fill: var(--neutral-500); /* New fill color on hover */
+}
+.save-to-favourite-container .bookmark {
+  display: none;
+  font-weight: var(--fw-500);
+  color: var(--color-primary-400);
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .save-to-favourite-container .bookmark {
+    display: flex;
+  }
+}
+/* ----------------------------------------- */
+/* Statistics of backers card */
+
+.statics-of-bakers-container {
+  border: 1px solid rgba(218, 215, 215, 0.507);
+  margin: var(--mobile-margin);
+  padding: var(--mobile-padding);
+  background-color: var(--neutra-100);
+  border-radius: var(--border-radius-p5);
+}
+.statics-of-bakers-container .bakers-backed-in-days {
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .statics-of-bakers-container {
+    padding: var(--desktop-padding);
+  }
+  .statics-of-bakers-container .bakers-backed-in-days {
+    display: flex;
+    gap: 2rem;
+  }
+}
+.statics-of-bakers-container
+  .bakers-backed-in-days
+  .number-of-statics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .statics-of-bakers-container
+    .bakers-backed-in-days
+    .number-of-statics-container {
+    align-items: flex-start;
+  }
+}
+.statics-of-bakers-container hr {
+  margin: 0.5rem;
+}
+.number-statics {
+  color: var(--neutral-900);
+  font-size: 2rem;
+  font-weight: var(--fw-700);
+}
+.statics-of-bakers-container .bakers-backed-in-days .total-of {
+  color: var(--neutral-500);
+  font-weight: var(--fw-500);
+}
+.statics-of-bakers-container .progress-container {
+  height: 0.8rem; /* Set your desired height */
+  border-radius: var(--border-radius-p5);
+  overflow: hidden;
+  background-color: hsla(0, 0%, 96%);
+  margin-top: 1rem;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: var(--border-radius-p5);
+  width: 80%;
+  background-color: var(--color-primary-400); /* Set your desired fill color */
+  transition: width 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* ------------------------ */
+/* About project section */
+
+.about-project-section {
+  color: var(--neutral-500);
+  padding: var(--mobile-padding);
+  margin: var(--mobile-margin);
+  border-radius: var(--border-radius-p5);
+  background-color: var(--neutra-100);
+  border: 1px solid rgba(218, 215, 215, 0.507);
+}
+@media (min-width: 768px) {
+  .about-project-section {
+    padding: var(--desktop-padding);
+  }
+}
+
+.plege-option-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-block: var(--mobile-margin);
+  padding: var(--mobile-padding);
+  border-radius: var(--border-radius-p5);
+  background-color: var(--neutra-100);
+  border: 1px solid rgba(218, 215, 215, 0.507);
+}
+.stand-type-offer-container {
+  display: grid;
+}
+@media (min-width: 768px) {
+  .stand-type-offer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.left-number-select-reward {
+  display: grid;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .about-project-section button {
+    max-width: 11rem;
+    padding: 0.8rem 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .left-number-select-reward {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.not-available-option {
+  opacity: 0.5;
+}
+.not-available-option button {
+  background-color: var(--neutral-500);
+}

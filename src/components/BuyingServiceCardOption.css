@@ -1,0 +1,95 @@
+.card-container {
+  padding: var(--mobile-padding);
+  display: grid;
+  gap: 1rem;
+  border-radius: var(--border-radius-p5);
+  background-color: var(--neutra-100);
+  border: 1px solid #dad7d781;
+}
+
+.card-container input[type="radio"] {
+  display: none;
+}
+.card-container.primary-border-radius {
+  border: 2px solid var(--color-primary-400);
+}
+.card-container .radio-circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  border: 2px solid var(--neutral-500);
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.checked .radio-circle::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-primary-400);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card-container label {
+  display: grid;
+  gap: 1rem;
+}
+.card-container .radio-pledge {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.days-left {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.enter-pledge {
+  display: grid;
+  align-items: center;
+  border-top: 1px solid var(--neutral-500);
+  padding-top: 1rem;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .enter-pledge {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.enter-pledge .pledge-continue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .enter-pledge .pledge-continue {
+    gap: 1rem;
+  }
+}
+.enter-pledge .input-dollar {
+  position: relative;
+}
+.enter-pledge .input-dollar input {
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: var(--fw-700);
+  border: 1px solid var(--neutral-500);
+  max-width: 7rem;
+}
+.enter-pledge .input-dollar input:focus {
+  border: 2px solid var(--color-primary-400);
+}
+.enter-pledge button {
+  padding: 0.9rem 1.5rem;
+}
+.enter-pledge .input-dollar svg {
+  position: absolute;
+  top: 1.2rem;
+  left: 0.8rem;
+}
